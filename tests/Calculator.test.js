@@ -19,15 +19,12 @@ test('Calculate the quotient of two numbers', () => {
     expect(result).toBe(.5);
 });
 test('Calculate the square of a number', () => {
-    let result = Calculator.Square(1,2);
-    expect(result).toBe(2);
+    let result = Calculator.Square(2,2);
+    expect(result).toBe(4);
 });
 test('Calculate the square root of a number', () => {
     let calculation = Calculator.SquareRoot(4);
-    expect(calculation.a).toBe(9);
-    expect(calculation.b).toBe(3);
-    expect(calculation.operation).toBe(Root);
-    expect(calculation.GetResults()).toBe(3);
+    expect(calculation).toBe(2);
 });
 test('Calculator adding to calculations', () => {
     //assigning the results of the calc sum method to an object, calculator returns an object
