@@ -32,8 +32,8 @@ test('Test the results for the Quotient function', () => {
 
 test('Test the results for the Power function', () => {
     let op = Power;
-    let calculation = new Calculation(1,2,op);
-    expect(calculation.GetResults()).toBe(2);
+    let calculation = new Calculation(2,2,op);
+    expect(calculation.GetResults()).toBe(4);
 });
 test('Test the results for the Root function', () => {
     let op = Root;
